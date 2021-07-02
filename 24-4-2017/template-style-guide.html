@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <title>Style Guide</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, minimal-ui">
+    <link rel="icon" href="favicon-16x16.png" type="image/x-icon" sizes="16x16">
+    <link rel="stylesheet" href="style/libs.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" media="screen" type="text/css" href="http://www.eyecon.ro/colorpicker/css/colorpicker.css">
+    <style>
+      .template {margin: 20px; background: #eee;}
+      .template h1 {text-align: center; text-transform: uppercase;}
+      .template h2 {margin: 20px 0; border-bottom: 1px solid #ccc; font-weight: normal;}
+      
+    </style>
+    <script src="js/modernizr.js"></script>
+  </head>
+  <body class="template">
+    <h1>Style Guide</h1>
+    <h2>Heading</h2>
+    <h2>Color</h2>
+    <h2>Icon</h2><span class="icon-close" style="display: inline-bock; margin: 5px; font-size: 24px;"></span><span class="icon-config" style="display: inline-bock; margin: 5px; font-size: 24px;"></span><span class="icon-competition" style="display: inline-bock; margin: 5px; font-size: 24px;"></span><span class="icon-conection" style="display: inline-bock; margin: 5px; font-size: 24px;"></span><span class="icon-contest" style="display: inline-bock; margin: 5px; font-size: 24px;"></span><span class="icon-facebook" style="display: inline-bock; margin: 5px; font-size: 24px;"></span><span class="icon-givaaway" style="display: inline-bock; margin: 5px; font-size: 24px;"></span><span class="icon-home" style="display: inline-bock; margin: 5px; font-size: 24px;"></span><span class="icon-instagram" style="display: inline-bock; margin: 5px; font-size: 24px;"></span><span class="icon-overlay" style="display: inline-bock; margin: 5px; font-size: 24px;"></span><span class="icon-reward" style="display: inline-bock; margin: 5px; font-size: 24px;"></span><span class="icon-twitch" style="display: inline-bock; margin: 5px; font-size: 24px;"></span><span class="icon-twitter" style="display: inline-bock; margin: 5px; font-size: 24px;"></span><span class="icon-youtube" style="display: inline-bock; margin: 5px; font-size: 24px;"></span><span class="icon-overlay" style="display: inline-bock; margin: 5px; font-size: 24px;"></span>
+    <h2>Button</h2>
+    <button class="btn-default" title="button">Button</button>
+    <button class="btn-small" title="button">Button</button>
+    <button class="btn-no-bgd-1" title="button">Button</button>
+    <button class="btn-no-bgd-2" title="button">Button</button>
+    <button class="btn-small btn-bgd-1" title="button">Button</button>
+    <button class="btn btn-bg-icon" title="button">Button</button>
+    <button class="btn-noborder" type="button">+ Add Style</button>
+    <button class="btn-noborder delete" type="button">Delete</button>
+    <button class="btn btn-icon"><span class="icon fa fa-star"></span><span>1100 points</span></button>
+    <h2>Form</h2>
+    <form class="form" action="#" method="POST" style="max-width: 500px;">
+      <div class="form-group">
+        <label>input</label>
+        <input class="form-control" type="text">
+      </div>
+      <div class="custom-ck">
+        <input id="checkboxdemo" type="checkbox" value="None" name="check">
+        <label for="checkboxdemo"></label>Default Style
+      </div>
+      <div class="radio-group">
+        <div class="form-group">
+          <div class="custom-radio">
+            <input id="radio" type="radio" value="None" name="check">
+            <label for="radio"></label>Use default .gif
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="custom-radio">
+            <input id="radio1" type="radio" value="None" name="check">
+            <label for="radio1"></label>Use image
+          </div>
+        </div>
+      </div>
+    </form>
+    <div class="switch-btn">
+      <input class="switch-btn-checkbox" id="switch-btn1" type="checkbox" name="switch-btn" checked="">
+      <label class="switch-btn-label" for="switch-btn1">
+        <div class="switch-btn-inner"></div><span class="switch-btn-switch"></span>
+      </label>
+    </div>
+    <h2>Component</h2>
+    <p>Input Range</p>
+    <div class="col-md-12">
+      <div class="input-range">
+        <input type="range" value="0.5" step="0.1" min="0.1" max="3.0">
+        <output class="label">0.5</output>
+      </div>
+    </div>
+    <p>Slider</p>
+    <div class="slick-block slick-slider">
+      <div class="slick-block__item">
+        <p>demo slick</p>
+      </div>
+      <div class="slick-block__item">
+        <p>demo slick</p>
+      </div>
+      <div class="slick-block__item">
+        <p>demo slick</p>
+      </div>
+    </div>
+    <p>color picker</p>
+    <div class="color-picker">
+      <button class="jscolor {valueElement:'chosen-value', onFineChange:'setTextColor(this)'}"></button>
+      <input class="color-input" id="chosen-value" value="000000">
+    </div>
+    <div class="color-picker">
+      <button class="jscolor {valueElement:'chosen-value-1', onFineChange:'setTextColor(this)'}"></button>
+      <input class="color-input" id="chosen-value-1" value="ff8d3f">
+    </div>
+    <!-- build:js js/script.js-->
+    <script defer src="js/l10n.js"></script>
+    <script defer src="js/libs.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script defer src="js/script.js"></script>
+    <!-- endbuild-->
+    <!-- build:development-only-->
+    <script src="//localhost:35729/livereload.js"></script>
+    <!-- endbuild-->
+    <!--[if lte IE 9]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
+    <noscript>JavaScript is off. Please enable to view full site.</noscript>
+  </body>
+</html>
